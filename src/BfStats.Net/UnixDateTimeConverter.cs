@@ -17,7 +17,15 @@ namespace BfStats
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            throw new NotImplementedException();
+            DateTime dateTime = (DateTime)value;
+            if (dateTime == DateTime.MinValue)
+            {
+                writer.WriteNull();
+            }
+            else
+            {
+                writer.WriteValue(dateTime);
+            }
         }
     }
 }
