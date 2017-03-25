@@ -1,0 +1,10 @@
+/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net.BfH/bin/Debug/netstandard1.1/BfStats.Net.BfH.deps.json
+/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net.BfH/bin/Debug/netstandard1.1/BfStats.Net.BfH.dll
+/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net.BfH/bin/Debug/netstandard1.1/BfStats.Net.BfH.pdb
+/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net.BfH/bin/Debug/netstandard1.1/BfStats.Net.BfH.xml
+/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net.BfH/bin/Debug/netstandard1.1/BfStats.Net.dll
+/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net.BfH/bin/Debug/netstandard1.1/BfStats.Net.pdb
+/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net.BfH/bin/Debug/netstandard1.1/BfStats.Net.xml
+/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net.BfH/obj/Debug/netstandard1.1/BfStats.Net.BfH.AssemblyInfo.cs
+/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net.BfH/obj/Debug/netstandard1.1/BfStats.Net.BfH.dll
+/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net.BfH/obj/Debug/netstandard1.1/BfStats.Net.BfH.pdb

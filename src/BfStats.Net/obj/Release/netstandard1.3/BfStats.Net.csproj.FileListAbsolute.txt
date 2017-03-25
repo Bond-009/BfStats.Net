@@ -1,0 +1,7 @@
+/home/bond/Documents/GitHub/BfStats.Net/src/BfStats.Net/bin/Release/netstandard1.3/BfStats.Net.deps.json
+/home/bond/Documents/GitHub/BfStats.Net/src/BfStats.Net/bin/Release/netstandard1.3/BfStats.Net.dll
+/home/bond/Documents/GitHub/BfStats.Net/src/BfStats.Net/bin/Release/netstandard1.3/BfStats.Net.pdb
+/home/bond/Documents/GitHub/BfStats.Net/src/BfStats.Net/bin/Release/netstandard1.3/BfStats.Net.xml
+/home/bond/Documents/GitHub/BfStats.Net/src/BfStats.Net/obj/Release/netstandard1.3/BfStats.Net.AssemblyInfo.cs
+/home/bond/Documents/GitHub/BfStats.Net/src/BfStats.Net/obj/Release/netstandard1.3/BfStats.Net.dll
+/home/bond/Documents/GitHub/BfStats.Net/src/BfStats.Net/obj/Release/netstandard1.3/BfStats.Net.pdb
