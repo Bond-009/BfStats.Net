@@ -27,14 +27,14 @@ namespace BfStats.BfH
         /// Returns data about a player.
         /// </summary>
         /// <returns>Returns data about a player.</returns>
-        public async Task<PlayerInfo> GetPlayerInfo(string platform, string name)
+        public async Task<PlayerInfo> GetPlayerInfo(Platform platform, string name)
         {
             return await await Task.Factory.StartNew(async () =>
                 JsonConvert.DeserializeObject<PlayerInfo>(
                     await GetStringAsync(Endpoints.PlayerInfo, 
                         new Dictionary<string, string>()
                         {
-                            { "plat", platform },
+                            { "plat", platform.ToString() },
                             { "name", name }
                         }
             )));

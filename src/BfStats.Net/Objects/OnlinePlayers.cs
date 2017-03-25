@@ -4,15 +4,15 @@ namespace BfStats
 {
     public class OnlinePlayers
     {
-        [JsonProperty("pc")]
+        [JsonRequired]
         public Playercount PC { get; set; }
-        [JsonProperty("ps3")]
+        [JsonRequired]
         public Playercount PS3 { get; set; }
-        [JsonProperty("xbox")]
-        public Playercount XBox { get; set; }
-        [JsonProperty("xone")]
+        [JsonRequired]
+        public Playercount Xbox { get; set; }
+        [JsonRequired]
         public Playercount XOne { get; set; }
-        [JsonProperty("ps4")]
+        [JsonRequired]
         public Playercount PS4 { get; set; }
     }
 }

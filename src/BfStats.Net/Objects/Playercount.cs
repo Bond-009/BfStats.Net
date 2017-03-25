@@ -4,11 +4,11 @@ namespace BfStats
 {
     public class Playercount
     {
-        [JsonProperty("label")]
+        [JsonRequired]
         public string Label { get; set; }
-        [JsonProperty("count")]
+        [JsonRequired]
         public int Count { get; set; }
-        [JsonProperty("peak24")]
+        [JsonRequired]
         public int Peak24 { get; set; }
     }
 }

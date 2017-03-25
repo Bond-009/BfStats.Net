@@ -10,7 +10,7 @@ namespace BfStats
         [JsonRequired]
         public int Number { get; set; }
         [JsonProperty("imgLarge")]
-        [JsonRequiredAttribute()]
+        [JsonRequired]
         public string ImageLarge { get; set; }
         [JsonProperty("img")]
         [JsonRequired]

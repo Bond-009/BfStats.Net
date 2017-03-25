@@ -1,60 +1,81 @@
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 using System;
 
 namespace BfStats
 {
     public class Player
     {
-        [JsonProperty("id")]
         [JsonRequired]
         public uint ID { get; set; }
-        [JsonProperty("game")]
         [JsonRequired]
         public string Game { get; set; }
         [JsonProperty("plat")]
         [JsonRequired]
-        public string Platform { get; set; }
-        [JsonProperty("name")]
+        public Platform Platform { get; set; }
         [JsonRequired]
         public string Name { get; set; }
-        [JsonProperty("tag")]
         [JsonRequired]
         public string Tag { get; set; }
-        /*[JsonProperty("dateCheck")]
+        [JsonConverter(typeof(UnixDateTimeConverter))]
         [JsonRequired]
         public DateTime DateCheck { get; set; }
-        [JsonProperty("dateUpdate")]
+        [JsonConverter(typeof(UnixDateTimeConverter))]
         [JsonRequired]
         public DateTime DateUpdate { get; set; }
-        [JsonProperty("dateCreate")]
+        [JsonConverter(typeof(UnixDateTimeConverter))]
         [JsonRequired]
         public DateTime DateCreate { get; set; }
-        [JsonProperty("dateStreak")]
+        [JsonConverter(typeof(UnixDateTimeConverter))]
         [JsonRequired]
         public DateTime DateStreak { get; set; }
-        [JsonProperty("lastDay")]
+        [JsonConverter(typeof(UnixDateTimeConverter))]
         [JsonRequired]
-        public DateTime LastDay { get; set; }*/
-        [JsonProperty("country")]
-        [JsonRequired]
+        public DateTime LastDay { get; set; }
+        /// <summary>
+        /// Country. null if not set
+        /// </summary>
         public string Country { get; set; }
-        [JsonProperty("countryName")]
-        [JsonRequired]
+        /// <summary>
+        /// Country name. null if not set
+        /// </summary>
         public string CountryName { get; set; }
         [JsonProperty("score")]
         [JsonRequired]
         public int Score { get; set; }
-        /*
-        [JsonProperty("timePlayed")]
+        
+        [JsonConverter(typeof(UnixTimeSpanConverter))]
         [JsonRequired]
-        public DateTime TimePlayed { get; set; }*/
+        public TimeSpan TimePlayed { get; set; }
         [JsonProperty("uId")]
         [JsonRequired]
         public ulong UserID { get; set; }
         [JsonProperty("uName")]
         [JsonRequired]
         public string UserName { get; set; }
-        // TODO: Add more info
+        /// <summary>
+        /// null if not set
+        /// </summary>
+        [JsonProperty("uGava")]
+        public string UserGava { get; set; }
+        [JsonProperty("udCreate")]
+        [JsonConverter(typeof(UnixDateTimeConverter))]
+        [JsonRequired]
+        public DateTime UserCreationDate { get; set; }
+        [JsonRequired]
+        public string Privacy { get; set; }
+        [JsonProperty("blPlayer")]
+        [JsonRequired]
+        public string BattlelogPlayer { get; set; }
+        [JsonProperty("blUser")]
+        [JsonRequired]
+        public string BattlelogUser { get; set; }
+        [JsonRequired]
+        public bool Editable { get; set; }
+        [JsonRequired]
+        public bool Viewable { get; set; }
+        [JsonRequired]
+        public bool Adminable { get; set; }
+        [JsonRequired]
+        public bool Linked { get; set; }
     }
 }
