@@ -1,6 +1,0 @@
-/home/bond/Documents/GitHub/BfStats.Net/src/BfStats.Net/bin/Debug/netstandard1.4/BfStats.Net.deps.json
-/home/bond/Documents/GitHub/BfStats.Net/src/BfStats.Net/bin/Debug/netstandard1.4/BfStats.Net.dll
-/home/bond/Documents/GitHub/BfStats.Net/src/BfStats.Net/bin/Debug/netstandard1.4/BfStats.Net.pdb
-/home/bond/Documents/GitHub/BfStats.Net/src/BfStats.Net/obj/Debug/netstandard1.4/BfStats.Net.AssemblyInfo.cs
-/home/bond/Documents/GitHub/BfStats.Net/src/BfStats.Net/obj/Debug/netstandard1.4/BfStats.Net.dll
-/home/bond/Documents/GitHub/BfStats.Net/src/BfStats.Net/obj/Debug/netstandard1.4/BfStats.Net.pdb

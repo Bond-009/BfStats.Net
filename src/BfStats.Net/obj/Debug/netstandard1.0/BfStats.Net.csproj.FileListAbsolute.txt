@@ -1,7 +1,0 @@
-/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net/bin/Debug/netstandard1.0/BfStats.Net.deps.json
-/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net/bin/Debug/netstandard1.0/BfStats.Net.dll
-/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net/bin/Debug/netstandard1.0/BfStats.Net.pdb
-/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net/bin/Debug/netstandard1.0/BfStats.Net.xml
-/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net/obj/Debug/netstandard1.0/BfStats.Net.AssemblyInfo.cs
-/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net/obj/Debug/netstandard1.0/BfStats.Net.dll
-/Users/Lode/Documents/Lode/Programming/Github/BfStats.Net/src/BfStats.Net/obj/Debug/netstandard1.0/BfStats.Net.pdb
