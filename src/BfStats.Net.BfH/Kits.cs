@@ -1,6 +1,3 @@
-using Newtonsoft.Json;
-using System;
-
 namespace BfStats
 {
     public class Kits : IKits
