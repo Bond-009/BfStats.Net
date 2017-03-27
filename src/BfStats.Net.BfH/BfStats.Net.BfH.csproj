@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Authors>Bond_009</Authors>
     <PackageId>BfStats.Net.BfH</PackageId>
-    <Version>0.2.2</Version>
+    <Version>0.2.4</Version>
   </PropertyGroup>
 
   <PropertyGroup Label="Configuration">

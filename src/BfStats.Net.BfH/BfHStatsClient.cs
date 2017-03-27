@@ -10,7 +10,13 @@ namespace BfStats.BfH
     public class BfHStatsClient : IDisposable
     {
         HttpClient httpclient = new HttpClient();
-        const string BaseURL = "http://api.bfhstats.com/api";
+        bool UseHttpPost = false;
+
+        public BfHStatsClient(bool useHttpPost = false)
+        {
+            this.UseHttpPost = useHttpPost;
+            httpclient.BaseAddress = new Uri("http://api.bfhstats.com");
+        }
 
         /// <summary>
         /// Returns currently in Battlefield Hardline logged in players.
@@ -53,8 +59,18 @@ namespace BfStats.BfH
             if (parameters == null) { parameters = new Dictionary<string, string>(); }
             parameters.Add("output", "json");
 
-            return await httpclient.GetStringAsync(
-                BaseURL + endpoint + "?" + string.Join("&", parameters.Select(x => x.Key + "=" + x.Value)));
+            if (UseHttpPost)
+            {
+                return await (await httpclient.PostAsync(endpoint,
+                    new FormUrlEncodedContent(parameters.ToList())))
+                        .EnsureSuccessStatusCode()
+                        .Content.ReadAsStringAsync();
+            }
+            else
+            {
+                return await httpclient.GetStringAsync(
+                    endpoint + "?" + string.Join("&", parameters.Select(x => x.Key + "=" + x.Value)));
+            }
         }
     }
 }

@@ -2,8 +2,9 @@ namespace BfStats
 {
     public static class Endpoints
     {
-        public const string OnlinePlayers = "/onlinePlayers";
-        public const string PlayerInfo = "/playerInfo";
-        public const string PlayerRankings = "/playerRankings";
+        private const string API = "/api";
+        public const string OnlinePlayers = API + "/onlinePlayers";
+        public const string PlayerInfo = API + "/playerInfo";
+        public const string PlayerRankings = API + "/playerRankings";
     }
 }
