@@ -10,9 +10,9 @@ namespace BfStats.BfH
     public class BfHStatsClient : IDisposable
     {
         HttpClient httpclient = new HttpClient();
-        bool UseHttpPost = false;
+        bool UseHttpPost;
 
-        public BfHStatsClient(bool useHttpPost = false)
+        public BfHStatsClient(bool useHttpPost = true)
         {
             this.UseHttpPost = useHttpPost;
             httpclient.BaseAddress = new Uri("http://api.bfhstats.com");
@@ -22,7 +22,7 @@ namespace BfStats.BfH
         /// Returns currently in Battlefield Hardline logged in players.
         /// </summary>
         /// <returns>Currently in Battlefield Hardline logged in players.</returns>
-        public async Task<OnlinePlayers> GetOnlinePlayers()
+        public async Task<OnlinePlayers> GetOnlinePlayersAsync()
         {
             return await await Task.Factory.StartNew(async () =>
                 JsonConvert.DeserializeObject<OnlinePlayers>(
@@ -33,7 +33,7 @@ namespace BfStats.BfH
         /// Returns data about a player.
         /// </summary>
         /// <returns>Returns data about a player.</returns>
-        public async Task<PlayerInfo> GetPlayerInfo(Platform platform, string name)
+        public async Task<PlayerInfo> GetPlayerInfoAsync(Platform platform, string name)
         {
             return await await Task.Factory.StartNew(async () =>
                 JsonConvert.DeserializeObject<PlayerInfo>(

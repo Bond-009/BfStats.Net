@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
-dotnet restore && dotnet build BfStats.Net.sln
+#!/bin/sh
+dotnet restore && dotnet build BfStats.Net.sln -c Release
