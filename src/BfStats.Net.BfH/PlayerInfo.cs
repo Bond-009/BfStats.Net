@@ -1,8 +1,8 @@
 namespace BfStats.BfH
 {
-    public class PlayerInfo : BfStats.PlayerInfo<BfStats.Stats<Kits>, Kits>
+    public class PlayerInfo : BfStats.PlayerInfo<Stats, Kits>
     {
-        public override BfStats.Stats<Kits> Stats { get; set; }
+        public override Stats Stats { get; set; }
 
     }
 }
